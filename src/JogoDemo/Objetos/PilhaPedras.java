@@ -2,7 +2,7 @@ package JogoDemo.Objetos;
 
 import ClassesBasicas.Ferramenta;
 import ClassesBasicas.Objeto;
-import JogoDemo.Ferramentas.Picareta;
+import JogoDemo.Ferramentas.LockPick;
 
 public class PilhaPedras extends Objeto {
 	public PilhaPedras() {
@@ -11,7 +11,7 @@ public class PilhaPedras extends Objeto {
 
 	@Override
 	public boolean usar(Ferramenta f) {
-		if (f instanceof Picareta) {
+		if (f instanceof LockPick) {
 			this.setAcaoOk(true);
 			return true;
 		}

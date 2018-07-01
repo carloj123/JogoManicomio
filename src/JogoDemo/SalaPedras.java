@@ -3,9 +3,7 @@ package JogoDemo;
 import ClassesBasicas.Ferramenta;
 import ClassesBasicas.Sala;
 import JogoDemo.Ferramentas.Chave;
-import JogoDemo.Ferramentas.Lanterna;
-import JogoDemo.Ferramentas.Picareta;
-import JogoDemo.Objetos.Cofre;
+import JogoDemo.Ferramentas.LockPick;
 import JogoDemo.Objetos.PilhaPedras;
 
 public class SalaPedras extends Sala {
@@ -29,7 +27,7 @@ public class SalaPedras extends Sala {
 	@Override
 	public boolean usa(String ferramenta) {
 		Ferramenta f = this.getMochila().usar(ferramenta);
-		if (f == null || !(f instanceof Picareta)) {
+		if (f == null || !(f instanceof LockPick)) {
 			return false;
 		}
 		PilhaPedras pp = (PilhaPedras)this.getObjetos().get("PilhaPedras");

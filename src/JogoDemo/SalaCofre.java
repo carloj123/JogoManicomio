@@ -4,7 +4,6 @@ import ClassesBasicas.Ferramenta;
 import ClassesBasicas.Sala;
 import JogoDemo.Ferramentas.Chave;
 import JogoDemo.Ferramentas.Lanterna;
-import JogoDemo.Ferramentas.Picareta;
 import JogoDemo.Objetos.Cofre;
 
 public class SalaCofre extends SalaJogoDemo {
@@ -14,9 +13,9 @@ public class SalaCofre extends SalaJogoDemo {
 		super("SalaCofre","1");
 	    escuro = true;
 		Cofre cofre = new Cofre();
-		Picareta picareta = new Picareta();
+		//Picareta picareta = new Picareta();
 		this.getObjetos().put("Cofre", cofre);
-		this.getFerramentas().put(picareta.getDescricao(), picareta);
+		//this.getFerramentas().put(picareta.getDescricao(), picareta);
 	}
 
 	@Override

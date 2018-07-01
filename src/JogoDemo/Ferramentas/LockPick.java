@@ -1,10 +1,8 @@
 package JogoDemo.Ferramentas;
-
 import ClassesBasicas.Ferramenta;
-
 import java.util.Random;
 
-public class LockPick extends Ferramenta {
+public class LockPick extends Ferramenta{
 	
 
 	private final int QTD_MAX_FALHA = 3;
